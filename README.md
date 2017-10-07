@@ -18,12 +18,16 @@ Python Flask is a Web Framework to develop Restful Endpoints and Enterprise Appl
 2. git clone 
 3. cd NovaCodeCamp2017
 4. virtualenv venv
-5. pip install -r requirements.txt
-6. cd static
-7. npm run build
-8. cd ..
-9. python FlaskBasicAppStart.py 
-10. navigate to http://127.0.0.1:5000
+5. source venv/bin/activate
+6. venv/Scripts/Activate.bat (for Windows)
+7. pip install -r requirements.txt
+8. cd static
+9. npm run build
+10. cd ..
+11. python FlaskBasicAppStart.py 
+12. navigate to http://127.0.0.1:5000
+
+## Advanced Instructions
 
 ## React Integration
 Here is a reference to a great article that explains the Integration of REACT into the application.
