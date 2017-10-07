@@ -1,7 +1,7 @@
 # NovaCodeCamp2017
 Basic Flask Repository for starting the Nova Code Camp
 
-Why should you be here: http://www.techrepublic.com/article/which-is-the-fastest-growing-programming-language-hint-its-not-javascript/
+Why should you be here: [Fastest Growing Programming Language](http://www.techrepublic.com/article/which-is-the-fastest-growing-programming-language-hint-its-not-javascript/)
 
 ## Basic Instructions:
 
@@ -18,9 +18,9 @@ Why should you be here: http://www.techrepublic.com/article/which-is-the-fastest
 
 ## React Integration
 Here is a reference to a great article that explains the Integration of REACT into the application.
-https://codeburst.io/creating-a-full-stack-web-application-with-python-npm-webpack-and-react-8925800503d9
+[Link Here](https://codeburst.io/creating-a-full-stack-web-application-with-python-npm-webpack-and-react-8925800503d9)
 
-Git Repository Here: https://github.com/angineering/FullStackTemplate
+[Git Repository Here](https://github.com/angineering/FullStackTemplate)
 
 ## Instructions for AWS CodeStar
 
@@ -31,5 +31,4 @@ Git Repository Here: https://github.com/angineering/FullStackTemplate
 5. Make changes to the appspec.yml file to ensure that the file permissions are managed
 
 ## Contact Information
-Author: Vinit Patankar
-Social Media: http://www.linkedin.com/in/pvinit
+  Author: Vinit Patankar [LinkedIn](http://www.linkedin.com/in/pvinit)
