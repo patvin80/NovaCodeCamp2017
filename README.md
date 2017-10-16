@@ -28,12 +28,44 @@ Python Flask is a Web Framework to develop Restful Endpoints and Enterprise Appl
 12. navigate to http://127.0.0.1:5000
 
 ## Advanced Instructions
+1. export FLASK_APP=FlaskBasicAppWithConfig.py
+2. export FLASK_DEBUG=1
+3. flask run
+4. Navigate to http://127.0.0.1:5000
 
 ## React Integration
 Here is a reference to a great article that explains the Integration of REACT into the application.
 [Link Here](https://codeburst.io/creating-a-full-stack-web-application-with-python-npm-webpack-and-react-8925800503d9)
 
-[Git Repository Here](https://github.com/angineering/FullStackTemplate)
+## Docker Environments:
+Dockerize the Environment -- https://github.com/tiangolo/uwsgi-nginx-flask-docker
+1. Docker File - Infrastructure as Code
+2. Docker File walkthrough
+    1. from specifies the image that you want to work with
+    2. COPY specifies that copy the contents of the current director to the app folder on the image
+    3. RUN executes commands on the images
+    4. Additional RUN Commands in the Dockerfile-dev to ensure that the uwsgi file is replaced appropriately.
+3. Apart from the Docker Files, docker also gives a Docker Compose mechanism to structure your infrastructure using yml syntax.
+    1. services indicates the machines
+    2. Dependency can be indicated
+    3. Configuration of the Postgres environment is setup in the Postgres DB and ensures that all environments are consistent
+4. The image for Python Flask with UWSGI configuration needs uwsgi.ini file setup
+    1. The Development environment has Command to run flask in debug mode locally to ensure that the local code changes would be reflected immediately
+    2. The Production environment has uwsgi nginx environment configured
+    3. The module and the app name have to be configured. The default value expected is "application" for callable.
+    4. The callable is the file name in which the app is created in our case FlaskBasicAppWithConfig
+
+## Docker Environment Execution
+### Development
+1. docker-compose -f docker-compose-dev.yml build
+2. docker-compose -f docker-compose-dev.yml up
+3. Navigate to http://127.0.0.1:4444 -- Port 4444 has been mapped to port 80 of the Docker Container
+4. Change code and watch the code changes being reflected.
+
+### Production
+1. docker-compose build
+2. docker-compose up
+3. Navigate to http://127.0.0.1  -- Port 80 has been mapped to port 80 of the Docker Container.
 
 ## Instructions for AWS CodeStar
 
